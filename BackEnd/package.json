@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "'test mongo'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "'node.js'"
+  ],
+  "author": "guanze",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.3.0",
+    "@koa/router": "^12.0.0",
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0",
+    "mongoose": "^6.4.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
