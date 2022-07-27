@@ -1,0 +1,32 @@
+.auth {
+    .title-info {
+        text-align: center;
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 32px;
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .title {
+            margin: 0;
+            margin: 18px;
+        }
+    }
+
+    .taps {
+        width: 400px;
+        margin: 0 auto;
+        .item {
+            margin-bottom: 16px;
+            button {
+                width: 100%;
+            }
+        }
+
+    }
+}
