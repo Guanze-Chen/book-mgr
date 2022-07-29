@@ -12,18 +12,24 @@
       <a-tabs>
         <a-tab-pane key="1" tab="登录">
         <div class="item">
-            <a-input placeholder="账号">
+            <a-input
+            placeholder="账号"
+            v-model:value="loginForm.account"
+            >
               <template #prefix>
                 <user-outlined />
               </template>
             </a-input>
           </div>
           <div class="item">
-            <a-input placeholder="密码">
+            <a-input-password
+            placeholder="密码"
+            v-model:value="loginForm.password"
+            >
                 <template #prefix>
                      <key-outlined />
                 </template>
-            </a-input>
+            </a-input-password>
           </div>
 
           <div class="item">
@@ -31,27 +37,36 @@
           </div>
 
           <div class="item">
-            <a-button type="primary">登录</a-button>
+            <a-button @click="login" type="primary">登录</a-button>
           </div>
         </a-tab-pane>
         <a-tab-pane key="2" tab="注册">
           <div class="item">
-            <a-input placeholder="账号">
+            <a-input
+            placeholder="账号"
+            v-model:value="regForm.account"
+            >
               <template #prefix>
                 <user-outlined />
               </template>
             </a-input>
           </div>
           <div class="item">
-            <a-input placeholder="密码">
+            <a-input-password
+            placeholder="密码"
+            v-model:value="regForm.password"
+            >
                 <template #prefix>
                      <key-outlined />
                 </template>
-            </a-input>
+            </a-input-password>
           </div>
 
           <div class="item">
-            <a-input placeholder="邀请码">
+            <a-input
+            placeholder="邀请码"
+            v-model:value="regForm.inviteCode"
+            >
                 <template #prefix>
                    <gift-outlined />
                 </template>
@@ -63,7 +78,10 @@
           </div>
 
           <div class="item">
-            <a-button type="primary">注册</a-button>
+            <a-button
+            @click="register"
+            type="primary"
+            >注册</a-button>
           </div>
         </a-tab-pane>
       </a-tabs>
